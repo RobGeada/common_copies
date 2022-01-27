@@ -44,5 +44,6 @@ def bcolor(key, string):
 ## Numpy
 
 ### Suppress scientific notation:
-
-`np.set_printoptions(suppress=True)`
+```
+np.set_printoptions(suppress=True)
+```
