@@ -16,8 +16,8 @@ import pandas as pd
 
 plt.style.use('material')
 
-`%load_ext autoreload`
-`%autoreload 2`
+%load_ext autoreload
+%autoreload 2
 ```
 
 # Python
