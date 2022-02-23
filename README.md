@@ -21,9 +21,14 @@ plt.style.use('material')
 ```
 
 # Python
+## Matplotlib
+```
+plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material_rh.mplstyle')
+plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material.mplstyle')
+plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material_white.mplstyle')
+```
 
 ## General
-
 ### Colored printing:
 ```
 bcolor_dict = {
