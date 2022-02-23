@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-plt.style.use('material')
+plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material.mplstyle')
 
 %load_ext autoreload
 %autoreload 2
@@ -24,7 +24,11 @@ plt.style.use('material')
 ## Matplotlib
 ```
 plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material_rh.mplstyle')
+```
+```
 plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material.mplstyle')
+```
+```
 plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material_white.mplstyle')
 ```
 
