@@ -56,3 +56,12 @@ def bcolor(key, string):
 ```
 np.set_printoptions(suppress=True)
 ```
+# Bash
+### Print nth column
+```
+awk '{print $2}'
+```
+### Grep invert
+```
+grep -v 
+```
