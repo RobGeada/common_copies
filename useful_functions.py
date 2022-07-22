@@ -1,9 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 plt.style.use('https://raw.githubusercontent.com/RobGeada/stylelibs/main/material_rh.mplstyle')
 
 
+# plot a correlation matrix nicely
 def correlation_plot(arr, labels, title):
     fig, ax = plt.subplots(figsize=(9, 9), dpi=150)
     ax.imshow(arr, cmap='RdBu', vmin=-1, vmax=1)
@@ -25,3 +27,14 @@ def correlation_plot(arr, labels, title):
     ax.grid(False)
     fig.tight_layout()
     plt.show()
+
+
+# automatically choose subplot dimensions
+def auto_plot_count(n):
+    pairs = []
+    for i in range(1,n+1):
+        j = math.ceil(n/i)
+        remainder = (i*j) - n
+        dist = np.abs(i-j)
+        pairs.append((i,j,2*remainder+dist))
+    return sorted(pairs, key=lambda x: (x[2]))[0][0:2]
